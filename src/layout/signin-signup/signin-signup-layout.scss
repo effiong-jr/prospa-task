@@ -1,0 +1,19 @@
+.signin-signup {
+  display: grid;
+  grid-template-columns: minmax(300px, 358px);
+
+  &__sidebar-container {
+    position: absolute;
+    max-width: 358px;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 299px) {
+  .signin-signup {
+    &__sidebar-container {
+      //   display: none;
+      //   border: 1px solid red;
+    }
+  }
+}

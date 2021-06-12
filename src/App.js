@@ -1,8 +1,15 @@
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import SignupPage from './pages/signup-page'
+
+import './App.css'
+
 function App() {
   return (
-    <div>
-      <h1>Prospa</h1>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={SignupPage} />
+      </Switch>
+    </Router>
   )
 }
 

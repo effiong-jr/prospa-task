@@ -1,0 +1,57 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #7e51ff;
+  height: 100%;
+  padding: 2rem;
+  color: #fff;
+
+  &__header {
+    &--text {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+
+  &__progress {
+    display: flex;
+    margin: 56px 0;
+
+    &--bar {
+      background-color: white;
+      height: 2px;
+      width: 54.98px;
+      border-radius: 1px;
+      margin: 0 2px;
+    }
+
+    &--bar:not(:first-child) {
+      opacity: 0.4;
+    }
+  }
+
+  &__info {
+    &--header {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 2.3125rem;
+      margin-bottom: 0.6rem;
+    }
+
+    &--text {
+      font-size: 0.9rem;
+      line-height: 18px;
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  &__image img {
+    object-fit: contain;
+    max-width: 394px;
+  }
+}
