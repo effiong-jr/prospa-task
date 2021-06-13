@@ -1,11 +1,28 @@
 .signin-signup {
   display: grid;
-  grid-template-columns: minmax(300px, 358px);
+  grid-template-columns: minmax(300px, 358px) auto;
 
   &__sidebar-container {
-    position: absolute;
     max-width: 358px;
     height: 100vh;
+  }
+
+  &__content-area {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      .forms {
+        width: 376px;
+      }
+    }
   }
 }
 

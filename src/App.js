@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import SignupPage from './pages/signup-page'
+import SignupPage from './pages/signup-page/signupPage'
 
-import './App.css'
+import './App.scss'
 
 function App() {
   return (
