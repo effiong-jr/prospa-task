@@ -1,23 +1,47 @@
-div.card-header {
-  background: transparent;
-  height: 80px;
-  border: none;
-  cursor: pointer;
+.custom-card {
+  display: flex;
+  flex-wrap: nowrap;
 
-  .title {
-    font-size: 1rem;
-    font-weight: 600;
+  &.active-card {
+    border: 1px solid #fa4a84;
+  }
 
-    span {
-      font-weight: normal;
-      font-size: 0.8rem;
+  .option-btn {
+    height: 15px;
+    width: 17px;
+    border-radius: 50%;
+  }
+
+  .not-selected {
+    background: none;
+    border: 1.5px solid #eeeff7;
+  }
+
+  .selected {
+    background-color: steelblue;
+  }
+
+  div.card-header {
+    background: transparent;
+    height: 80px;
+    border: none;
+    cursor: pointer;
+
+    .title {
+      font-size: 1rem;
+      font-weight: 600;
+
+      span {
+        font-weight: normal;
+        font-size: 0.8rem;
+      }
     }
   }
-}
 
-div.card-body {
-  .list-group-item {
-    border: none;
-    font-size: 0.8125rem;
+  div.card-body {
+    .list-group-item {
+      border: none;
+      font-size: 0.8125rem;
+    }
   }
 }
