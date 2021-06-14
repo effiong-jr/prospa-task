@@ -15,11 +15,15 @@ const Layout = ({ children, ...props }) => {
           <SignInLink canGoBack={props.canGoBack} />
         </div>
         <div className="signin-signup__content-area__content">
-          <div className="forms">
-            <h2 className="">{props.title}</h2>
+          <div className="signin-signup__content-area__content__form">
+            <h2 className="signin-signup__content-area__content__form--title">
+              {props.title}
+            </h2>
             <p>{props.desc}</p>
 
-            {children}
+            <div className="signin-signup__content-area__content__form--dynamic-content">
+              {children}
+            </div>
           </div>
         </div>
       </section>

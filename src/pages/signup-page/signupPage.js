@@ -1,7 +1,7 @@
-import Layout from '../../layout/signin-signup/signin-signup'
+import Layout from '../../layout/signin-signup-layout/signInSignupLayout'
 import CreateAccountForm from '../../layout/create-account-form/createAccountForm'
 
-const SignupPage = () => {
+const SignupPage = (props) => {
   return (
     <Layout
       title="Create your account"

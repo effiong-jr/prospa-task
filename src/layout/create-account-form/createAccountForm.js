@@ -1,12 +1,22 @@
+import { useHistory } from 'react-router-dom'
+
 import CustomInputField from '../../components/input-field/customInputField'
 import CustomButton from '../../components/custom-button/customButton'
 
 import './create-account-form.scss'
 
-const CreateAccountForm = ({ history }) => {
+const CreateAccountForm = (props) => {
+  const history = useHistory()
+
+  const handleGoToNextPage = (event) => {
+    event.preventDefault()
+
+    history.push('/open-business-account')
+  }
+
   return (
     <section className="form row">
-      <form className="col px-0">
+      <form onSubmit={handleGoToNextPage} className="col px-0">
         <div className="form__field col">
           <CustomInputField type="text" name="first_name" label="First Name" />
         </div>

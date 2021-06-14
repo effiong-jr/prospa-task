@@ -3,7 +3,7 @@
   grid-template-columns: minmax(300px, 358px) auto;
 
   &__sidebar-container {
-    max-width: 358px;
+    max-width: 408px;
     height: 100vh;
   }
 
@@ -19,8 +19,21 @@
       align-items: center;
       height: 100%;
 
-      .forms {
-        width: 376px;
+      &__form {
+        // width: 376px;
+
+        &--title {
+          font-size: 1.75rem;
+          font-weight: 600;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        &--dynamic-content {
+          width: 376px;
+        }
       }
     }
   }

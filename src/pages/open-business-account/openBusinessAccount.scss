@@ -1,0 +1,23 @@
+div.card-header {
+  background: transparent;
+  height: 80px;
+  border: none;
+  cursor: pointer;
+
+  .title {
+    font-size: 1rem;
+    font-weight: 600;
+
+    span {
+      font-weight: normal;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+div.card-body {
+  .list-group-item {
+    border: none;
+    font-size: 0.8125rem;
+  }
+}
