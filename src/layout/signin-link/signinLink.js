@@ -16,9 +16,13 @@ const SignInLink = ({ canGoBack, ...props }) => {
         )}
       </div>
       <div className="actions__signin">
-        <span>Already a member? </span>
+        <span>
+          {props.registeredUser
+            ? 'Already a member?'
+            : 'Don’t have an account?'}{' '}
+        </span>
         <span className="actions__signin--link">
-          <Link to="/signin">Sign In</Link>
+          <Link to={props.url || '/login'}>{props.action || 'Sign In'}</Link>
         </span>
       </div>
     </div>

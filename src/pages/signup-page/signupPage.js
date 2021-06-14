@@ -6,6 +6,7 @@ const SignupPage = (props) => {
     <Layout
       title="Create your account"
       desc="A short description about account types"
+      registeredUser={true}
     >
       <CreateAccountForm />
     </Layout>

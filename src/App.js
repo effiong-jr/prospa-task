@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import SignupPage from './pages/signup-page/signupPage'
 import OpenBusinessAccount from './pages/open-business-account/openBusinessAccountPage'
+import LoginPage from './pages/login-page/loginPage'
 
 import './App.scss'
 
@@ -14,6 +15,7 @@ function App(props) {
           path="/open-business-account"
           component={OpenBusinessAccount}
         />
+        <Route exact path="/login" component={LoginPage} />
       </Switch>
     </Router>
   )

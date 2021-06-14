@@ -12,7 +12,7 @@ const Layout = ({ children, ...props }) => {
 
       <section className="signin-signup__content-area">
         <div className="signin-signup__content-area--header">
-          <SignInLink canGoBack={props.canGoBack} />
+          <SignInLink canGoBack={props.canGoBack} {...props} />
         </div>
         <div className="signin-signup__content-area__content">
           <div className="signin-signup__content-area__content__form">
