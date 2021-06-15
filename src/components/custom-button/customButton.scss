@@ -1,10 +1,12 @@
+@import '../../variables';
+
 .custom-button {
-  // background:
   border-radius: 6px;
+  border: none;
   height: 50px;
   width: 100%;
   color: #fff;
   font-size: 1rem;
   font-family: inherit;
-  background-color: black;
+  background: $color-pink;
 }

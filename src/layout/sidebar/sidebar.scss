@@ -1,9 +1,12 @@
+@import '../../variables.scss';
+
 .sidebar {
   display: flex;
   flex-direction: column;
-  background-color: #7e51ff;
-  height: 100%;
+  background-color: $color-violet;
+  min-height: 100vh;
   padding: 2rem;
+  padding-bottom: 1rem;
   color: #fff;
 
   &__header {
@@ -53,5 +56,9 @@
   &__image img {
     object-fit: contain;
     max-width: 394px;
+  }
+
+  &__date {
+    margin-top: 2rem;
   }
 }

@@ -1,9 +1,12 @@
+@import '../../variables.scss';
+
 .custom-card {
   display: flex;
   flex-wrap: nowrap;
+  color: $color-black;
 
   &.active-card {
-    border: 1px solid #fa4a84;
+    border: 1px solid $color-pink;
   }
 
   .option-btn {
@@ -18,7 +21,7 @@
   }
 
   .selected {
-    background-color: steelblue;
+    background-color: $color-pink;
   }
 
   div.card-header {

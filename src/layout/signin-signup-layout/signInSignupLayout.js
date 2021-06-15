@@ -7,7 +7,7 @@ const Layout = ({ children, ...props }) => {
   return (
     <div className="signin-signup">
       <section className="signin-signup__sidebar-container">
-        <SideBar />
+        <SideBar {...props} />
       </section>
 
       <section className="signin-signup__content-area">

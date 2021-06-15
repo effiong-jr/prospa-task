@@ -3,7 +3,7 @@ import './sidebar.scss'
 
 const SideBar = (props) => {
   return (
-    <section className="sidebar">
+    <section className={`sidebar ${props.className}`}>
       <div className="sidebar__header">
         <h1 className="sidebar__header--text">Prospa</h1>
       </div>
@@ -28,7 +28,7 @@ const SideBar = (props) => {
       </div>
 
       <div className="sidebar__date">
-        <p>&copy; 2020 Prospa Inc</p>
+        <p className="m-0">&copy; 2020 Prospa Inc</p>
       </div>
     </section>
   )

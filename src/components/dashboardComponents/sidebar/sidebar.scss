@@ -1,3 +1,5 @@
+@import '../../../variables.scss';
+
 .dashboard__sidebar {
   box-shadow: 0px 2px 22px rgba(131, 151, 171, 0.24);
   position: relative;
@@ -21,14 +23,13 @@
         font-size: 0.813rem;
 
         &:last-child {
-          color: #fa4a84;
+          color: $color-pink;
         }
       }
     }
 
     &__content {
       display: flex;
-      //   border: 1px solid red;
       max-height: 80px;
       padding: 5%;
       justify-content: space-between;
@@ -47,7 +48,7 @@
           &__account-action {
             font-size: 0.75rem;
             font-weight: 500;
-            color: #8397ab;
+            color: $color-grey;
           }
         }
       }
@@ -61,7 +62,7 @@
         height: 2.5rem;
         width: 2.5rem;
         border-radius: 50%;
-        background: #1c1335;
+        background: $color-navy;
         color: #fff;
         font-size: 0.75rem;
         font-weight: 500;
@@ -72,7 +73,7 @@
         outline: none;
         background: #f4f8fb;
         border-radius: 4px;
-        color: #8397ab;
+        color: $color-grey;
         height: 2.5rem;
         width: 2.5rem;
 
@@ -80,7 +81,7 @@
         &:active,
         &:focus {
           outline: none;
-          background: #8397ab;
+          background: $color-grey;
         }
       }
     }
@@ -118,8 +119,7 @@
     }
 
     &__footer {
-      //   text-align: center;
-      color: #8397ab;
+      color: $color-grey;
       padding: 5% 10%;
       font-weight: 900;
       font-size: 2rem;

@@ -1,3 +1,5 @@
+@import '../../../variables.scss';
+
 .dashboard__header {
   display: flex;
   justify-content: space-between;
@@ -7,7 +9,7 @@
   height: 80px;
 
   &--title {
-    color: #8397ab;
+    color: $color-grey;
     font-size: 1.313rem;
     font-weight: 600;
   }
@@ -26,11 +28,11 @@
       justify-content: center;
       align-items: center;
       font-size: 1.5rem;
-      border: 1.5px solid #8397ab;
+      border: 1.5px solid $color-grey;
       height: 2rem;
       width: 2rem;
       border-radius: 5px;
-      color: #8397ab;
+      color: $color-grey;
     }
 
     &--avatar img {

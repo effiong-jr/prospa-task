@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useHistory } from 'react-router-dom'
 
 import { Accordion, Card, ListGroup } from 'react-bootstrap'
 
@@ -15,6 +16,8 @@ const OpenBusinessAccount = (props) => {
     type2: { name: 'type2', isSelected: false },
     type3: { name: 'type3', isSelected: false },
   })
+
+  const history = useHistory()
 
   const handleSelectedAccount = (selected) => {
     switch (selected.name) {
@@ -222,7 +225,9 @@ const OpenBusinessAccount = (props) => {
         </Accordion>
 
         <div>
-          <CustomButton>Next</CustomButton>
+          <CustomButton onClick={() => history.push('/login')}>
+            Next
+          </CustomButton>
         </div>
       </section>
     </Layout>

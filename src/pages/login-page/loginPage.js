@@ -3,6 +3,8 @@ import CustomButton from '../../components/custom-button/customButton'
 import CustomInputField from '../../components/input-field/customInputField'
 import Layout from '../../layout/signin-signup-layout/signInSignupLayout'
 
+import './loginPage.scss'
+
 const LoginPage = () => {
   const history = useHistory()
 
@@ -19,6 +21,7 @@ const LoginPage = () => {
         all in one place"
         url="/"
         action="Sign Up"
+        className="login__sidebar"
       >
         <div>
           <form onSubmit={handleLogin}>

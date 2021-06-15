@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .actions {
   display: flex;
   justify-content: space-between;
@@ -9,6 +11,11 @@
     border-radius: 4px;
     height: 2rem;
     width: 2rem;
-    color: #8397ab;
+    color: $color-grey;
+  }
+
+  &__signin a {
+    color: $color-pink;
+    font-weight: 400;
   }
 }
