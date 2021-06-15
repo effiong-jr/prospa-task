@@ -1,11 +1,11 @@
 .dashboard-layout {
   display: grid;
   grid-template-columns: minmax(20%, 300px) 1fr;
-  //   border: 1px solid green;
-  height: 100vh;
 
   &__body {
+    position: relative;
     &__content {
+      position: absolute;
       padding: 2.25rem 5.6rem;
       padding-bottom: 0.5rem;
       display: flex;
@@ -13,6 +13,7 @@
       height: calc(100% - 80px);
       flex-direction: column;
       background: #f2f2f2;
+      overflow-y: auto;
     }
   }
 }
