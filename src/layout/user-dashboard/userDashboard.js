@@ -5,13 +5,13 @@ import './user-dashboard.scss'
 
 const DashboardLayout = ({ children, ...props }) => {
   return (
-    <div className="dashboard">
-      <div className="dashboard__sidebar">
+    <div className="dashboard-layout">
+      <div className="dashboard-layout__sidebar">
         <DashboardSidebar />
       </div>
-      <div>
+      <div className="dashboard-layout__body">
         <Header />
-        <div className="dashboard__content">{children}</div>
+        <div className="dashboard-layout__body__content">{children}</div>
       </div>
     </div>
   )

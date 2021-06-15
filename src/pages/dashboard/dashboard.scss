@@ -1,0 +1,32 @@
+.dashboard__content-area {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  height: 100%;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+
+    &__desc {
+      &--title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #1c1335;
+      }
+
+      &--text {
+        font-weight: 500;
+        font-size: 1rem;
+      }
+    }
+
+    &__cta {
+      width: 10.625rem;
+    }
+  }
+
+  &__content {
+  }
+}

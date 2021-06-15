@@ -1,0 +1,36 @@
+.account-info {
+  display: flex;
+  justify-content: space-between;
+
+  &__card__container {
+    // max-width: 29.25rem;
+    width: 48%;
+    height: 10.62rem;
+
+    & div.custom-card {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__account-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .account-type {
+        font-weight: 600;
+        font-size: 0.875rem;
+      }
+
+      .account-number {
+        font-size: 0.857rem;
+        font-weight: 500;
+      }
+
+      .account-balance {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
