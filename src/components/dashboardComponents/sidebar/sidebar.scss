@@ -1,0 +1,126 @@
+.dashboard__sidebar {
+  box-shadow: 0px 2px 22px rgba(131, 151, 171, 0.24);
+  //   height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__header {
+    height: 80px;
+    border-bottom: 1px solid #eeeff7;
+    display: flex;
+    flex-direction: column;
+
+    .dropdown-menu {
+      width: 90%;
+      margin-top: 15px;
+
+      .dropdown-item {
+        font-weight: 500;
+        font-size: 0.813rem;
+
+        &:last-child {
+          color: #fa4a84;
+        }
+      }
+    }
+
+    &__content {
+      display: flex;
+      //   border: 1px solid red;
+      max-height: 80px;
+      padding: 5%;
+      justify-content: space-between;
+
+      &__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .desc {
+          &__comp-name {
+            font-size: 1rem;
+            font-weight: 600;
+          }
+
+          &__account-action {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #8397ab;
+          }
+        }
+      }
+
+      &__text .logo {
+        display: flex;
+        margin-right: 1rem;
+
+        justify-content: center;
+        align-items: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+        background: #1c1335;
+        color: #fff;
+        font-size: 0.75rem;
+        font-weight: 500;
+      }
+
+      button {
+        border: none;
+        outline: none;
+        background: #f4f8fb;
+        border-radius: 4px;
+        color: #8397ab;
+        height: 2.5rem;
+        width: 2.5rem;
+
+        &:hover,
+        &:active,
+        &:focus {
+          outline: none;
+          background: #8397ab;
+        }
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    &__links {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      padding: 2.1rem 2rem;
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          height: 2rem;
+          margin-bottom: 1rem;
+          cursor: pointer;
+
+          img {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+
+    &__footer {
+      //   text-align: center;
+      color: #8397ab;
+      padding: 5% 10%;
+      font-weight: 900;
+      font-size: 2rem;
+    }
+  }
+}

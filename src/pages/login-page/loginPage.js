@@ -5,6 +5,12 @@ import Layout from '../../layout/signin-signup-layout/signInSignupLayout'
 
 const LoginPage = () => {
   const history = useHistory()
+
+  const handleLogin = (event) => {
+    event.preventDefault()
+
+    history.push('/dashboard')
+  }
   return (
     <div>
       <Layout
@@ -15,7 +21,7 @@ const LoginPage = () => {
         action="Sign Up"
       >
         <div>
-          <form>
+          <form onSubmit={handleLogin}>
             <div className="mb-3">
               <CustomInputField
                 label="Email Address"
@@ -33,9 +39,7 @@ const LoginPage = () => {
             </div>
 
             <div>
-              <CustomButton onClick={() => history.push('/dashboard')}>
-                Next
-              </CustomButton>
+              <CustomButton type="submit">Next</CustomButton>
             </div>
           </form>
         </div>

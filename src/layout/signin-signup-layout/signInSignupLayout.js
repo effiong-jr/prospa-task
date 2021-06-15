@@ -1,5 +1,5 @@
 import SideBar from '../sidebar/sidebar'
-import SignInLink from '../signin-link/signinLink'
+import SignInLink from '../../components/signin-link/signinLink'
 
 import './signin-signup-layout.scss'
 

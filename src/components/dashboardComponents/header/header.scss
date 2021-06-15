@@ -1,0 +1,44 @@
+.dashboard__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.25rem 5.625rem;
+  height: 80px;
+
+  &--title {
+    color: #8397ab;
+    font-size: 1.313rem;
+    font-weight: 600;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      margin: 0 1rem;
+    }
+
+    &--notification {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      border: 1.5px solid #8397ab;
+      height: 2rem;
+      width: 2rem;
+      border-radius: 5px;
+      color: #8397ab;
+    }
+
+    &--avatar img {
+      object-fit: cover;
+
+      height: 2.5rem;
+      width: 2.5rem;
+      border-radius: 50%;
+    }
+  }
+}
