@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .dashboard__content-area {
   display: flex;
   flex-direction: column;
@@ -18,6 +20,10 @@
       &--text {
         font-weight: 500;
         font-size: 1rem;
+
+        span {
+          color: $color-pink;
+        }
       }
     }
 
@@ -29,9 +35,6 @@
   &__content {
     display: flex;
     flex-direction: column;
-
-    &--account-info {
-    }
 
     &--account-summary {
       margin-top: 1.5rem;
@@ -45,6 +48,27 @@
         margin-left: 1.5rem;
         margin-bottom: 1rem;
         flex-grow: 1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1027px) {
+  .dashboard__content-area {
+    &__header {
+      flex-direction: column;
+    }
+
+    &__content--account-summary {
+      // padding: 1rem;
+      flex-direction: column;
+
+      .account-stats {
+        width: 100%;
+      }
+
+      .cash-flow {
+        margin: 0;
       }
     }
   }

@@ -51,7 +51,7 @@ const OpenBusinessAccount = (props) => {
       desc="A short description comes here"
       canGoBack={true}
     >
-      <section>
+      <section className="open-biz-account">
         <Accordion defaultActiveKey="0">
           {/* Card 1 */}
           <CustomCard
@@ -224,7 +224,7 @@ const OpenBusinessAccount = (props) => {
           </CustomCard>
         </Accordion>
 
-        <div>
+        <div className="open-biz-account__nxt-btn">
           <CustomButton onClick={() => history.push('/login')}>
             Next
           </CustomButton>

@@ -44,3 +44,13 @@
     }
   }
 }
+
+@media screen and (max-width: 1027px) {
+  .dashboard__header {
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.25rem 1.625rem;
+    height: 80px;
+  }
+}

@@ -15,7 +15,7 @@ const CreateAccountForm = (props) => {
   }
 
   return (
-    <section className="form row">
+    <section className="form row ">
       <form onSubmit={handleGoToNextPage} className="col px-0">
         <div className="form__field col">
           <CustomInputField type="text" name="first_name" label="First Name" />
@@ -33,7 +33,7 @@ const CreateAccountForm = (props) => {
               <option value="+237">+237</option>
             </CustomInputField>
           </div>
-          <div className="form__field col pl-0">
+          <div className="form__field col pl-md-0">
             <CustomInputField
               type="tel"
               name="mobileNumber"

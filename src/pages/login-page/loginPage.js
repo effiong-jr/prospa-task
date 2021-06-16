@@ -23,8 +23,8 @@ const LoginPage = () => {
         action="Sign Up"
         className="login__sidebar"
       >
-        <div>
-          <form onSubmit={handleLogin}>
+        <div className="login-form">
+          <form className="form" onSubmit={handleLogin}>
             <div className="mb-3">
               <CustomInputField
                 label="Email Address"

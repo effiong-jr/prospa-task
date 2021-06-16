@@ -39,28 +39,32 @@ const DashboardSidebar = () => {
           <ul>
             <li>
               <img src={accountsIcon} alt="" />
-              Accounts
+              <span className="title">Accounts</span>
             </li>
             <li>
-              <img src={transferIcon} alt="" /> Transfer
+              <img src={transferIcon} alt="" />{' '}
+              <span className="title">Transfer</span>
             </li>
             <li>
               <img src={invoiceIcon} alt="" />
-              Invoice
+              <span className="title">Invoice</span>
             </li>
             <li>
-              <img src={managementIcon} alt="" /> Management
+              <img src={managementIcon} alt="" />{' '}
+              <span className="title">Management</span>
             </li>
             <li>
-              <img src={managementIcon} alt="" /> Security
+              <img src={managementIcon} alt="" />{' '}
+              <span className="title">Security</span>
             </li>
             <li>
               {' '}
-              <img src={managementIcon} alt="" /> Support
+              <img src={managementIcon} alt="" />{' '}
+              <span className="title">Support</span>
             </li>
           </ul>
+          <div className="dashboard__sidebar__container__footer">Prospa</div>
         </div>
-        <div className="dashboard__sidebar__container__footer">Prospa</div>
       </div>
     </div>
   )

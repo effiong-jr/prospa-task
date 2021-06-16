@@ -20,7 +20,7 @@
       height: 100%;
 
       &__form {
-        width: 376px;
+        max-width: 100%;
 
         &--title {
           font-size: 1.75rem;
@@ -39,11 +39,27 @@
   }
 }
 
-@media screen and (max-width: 299px) {
+@media screen and (max-width: 800px) {
+  .signin-signup__sidebar-container {
+    display: none;
+  }
+
   .signin-signup {
-    &__sidebar-container {
-      //   display: none;
-      //   border: 1px solid red;
+    display: flex;
+    max-width: 100%;
+
+    justify-content: center;
+    height: 100vh;
+
+    .signin-signup__content-area {
+      width: 100%;
+      max-width: 376px;
+      padding: 1rem;
+
+      &__content__form--title,
+      &__content__form p {
+        padding-left: 1rem;
+      }
     }
   }
 }

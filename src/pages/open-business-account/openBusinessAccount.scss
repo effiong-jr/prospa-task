@@ -1,50 +1,68 @@
 @import '../../variables.scss';
 
-.custom-card {
+.open-biz-account {
   display: flex;
-  flex-wrap: nowrap;
-  color: $color-black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  &.active-card {
-    border: 1px solid $color-pink;
+  .accordion {
+    margin: 0;
   }
+  .custom-card {
+    display: flex;
+    flex-wrap: nowrap;
+    color: $color-black;
 
-  .option-btn {
-    height: 15px;
-    width: 17px;
-    border-radius: 50%;
-  }
+    max-width: 355px;
+    padding: 0.5rem 1rem;
+    // margin-right: 0;
 
-  .not-selected {
-    background: none;
-    border: 1.5px solid #eeeff7;
-  }
+    &.active-card {
+      border: 1px solid $color-pink;
+    }
 
-  .selected {
-    background-color: $color-pink;
-  }
+    .option-btn {
+      height: 15px;
+      width: 17px;
+      border-radius: 50%;
+    }
 
-  div.card-header {
-    background: transparent;
-    height: 80px;
-    border: none;
-    cursor: pointer;
+    .not-selected {
+      background: none;
+      border: 1.5px solid #eeeff7;
+    }
 
-    .title {
-      font-size: 1rem;
-      font-weight: 600;
+    .selected {
+      background-color: $color-pink;
+    }
 
-      span {
-        font-weight: normal;
-        font-size: 0.8rem;
+    div.card-header {
+      background: transparent;
+      height: 80px;
+      border: none;
+      cursor: pointer;
+
+      .title {
+        font-size: 1rem;
+        font-weight: 600;
+
+        span {
+          font-weight: normal;
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    div.card-body {
+      .list-group-item {
+        border: none;
+        font-size: 0.8125rem;
       }
     }
   }
 
-  div.card-body {
-    .list-group-item {
-      border: none;
-      font-size: 0.8125rem;
-    }
+  &__nxt-btn {
+    width: 95%;
   }
 }
