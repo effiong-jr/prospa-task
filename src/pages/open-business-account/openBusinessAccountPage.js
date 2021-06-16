@@ -50,6 +50,7 @@ const OpenBusinessAccount = (props) => {
       title="Open a new business account"
       desc="A short description comes here"
       canGoBack={true}
+      registeredUser={true}
     >
       <section className="open-biz-account">
         <Accordion defaultActiveKey="0">
